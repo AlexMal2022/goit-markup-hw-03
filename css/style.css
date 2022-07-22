@@ -17,14 +17,15 @@ body {
   line-height: calc(31 / 26);
   letter-spacing: 0.03em;
   color: #000000;
-  text-decoration: none;
 }
 
 .headnav-list {
   font-weight: 500;
   font-size: 14px;
-  line-height: 1.14;
+  line-height: 16px;
   letter-spacing: 0.02em;
+  color: #212121;
+  list-style: none;
   text-decoration: none;
 }
 
@@ -34,12 +35,15 @@ body {
 }
 
 .contacts {
+}
+
+.contacts {
   font-weight: 500;
   font-size: 14px;
-  line-height: 1.14;
+  line-height: calc(16 / 14);
   letter-spacing: 0.02em;
   color: #757575;
-  text-decoration: none;
+  list-style-type: none;
 }
 
 .contacts:hover,
@@ -72,11 +76,20 @@ body {
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
-  color: #ffffff;
   cursor: pointer;
 }
 
+.button:hover,
+.button:active {
+  background: #2196f3;
+  /* shadow-middle */
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+}
+
 .plus {
+  text-decoration: none;
 }
 
 .conteiner {
@@ -87,6 +100,7 @@ body {
 }
 
 .plus-list {
+  list-style-type: none;
 }
 
 .plus-text-title {
@@ -95,7 +109,6 @@ body {
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-
   color: #212121;
 }
 
@@ -104,7 +117,6 @@ body {
   font-size: 14px;
   line-height: calc(24 / 14);
   letter-spacing: 0.03em;
-
   color: #757575;
 }
 
@@ -120,11 +132,11 @@ body {
   line-height: calc(42 / 36);
   text-align: center;
   letter-spacing: 0.03em;
-
   color: #212121;
 }
 
 .about-list {
+  list-style-type: none;
 }
 
 .about-foto {
@@ -142,6 +154,7 @@ body {
 }
 
 .team-list {
+  list-style-type: none;
 }
 
 .specialist {
@@ -211,32 +224,55 @@ body {
 }
 
 .footer-list {
+  list-style-type: none;
+  text-decoration: none;
 }
 
 .location {
   font-weight: 400;
   font-size: 14px;
-  line-height: 24px;
+  line-height: calc(24 / 14);
   letter-spacing: 0.03em;
-
   color: #ffffff;
 }
 
 .contacts {
-  text-decoration: none;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: calc(24 / 14);
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
 }
 
 .filter-item {
+}
+
+.filter-item:hover,
+.filter-item:active {
+  background: #2196f3;
+  /* shadow-middle */
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+  text-decoration-color: #ffffff;
+}
+
+.filter-list {
   font-weight: 500;
   font-size: 16px;
   line-height: calc(26 / 18);
   text-align: center;
   letter-spacing: 0.03em;
   cursor: pointer;
+  list-style-type: none;
 }
 
 .projects-title {
   visibility: hidden;
+}
+
+.projects-list {
+  list-style-type: none;
 }
 
 .project-tehno-title {
