@@ -1,3 +1,16 @@
+p,
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   font-family: 'Roboto', sans-serif;
   color: #212121;
@@ -6,6 +19,17 @@ body {
 /* ----Header----- */
 
 .header {
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
+
+.conteiner {
+  width: 100%;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .header-nav {
@@ -86,6 +110,7 @@ body {
   border: 1px solid #000000;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   background: #2196f3;
+  cursor: pointer;
 }
 
 .button-hero:hover,
@@ -111,9 +136,6 @@ body {
 
 .plus {
   text-decoration: none;
-}
-
-.conteiner {
 }
 
 .plus-title {
@@ -237,7 +259,6 @@ body {
   font-size: 26px;
   line-height: calc(31 / 26);
   letter-spacing: 0.03em;
-
   color: #ffffff;
 }
 
