@@ -15,36 +15,47 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="./css/style.css" />
   </head>
 
   <body class="body">
     <header class="header">
       <div class="conteiner">
-        <nav class="header-nav">
+        <div class="header-conteiner">
           <h1>
             <a href="./index.html" class="logo"
               ><span class="logo-web">Web</span><span class="logo-studio">Studio</span></a
             >
           </h1>
-          <ul class="headnav-list">
+          <nav class="header-nav">
+            <ul class="headnav-list">
+              <li class="headnav-items">
+                <a href="./index.html" class="headnav-item">Студия</a>
+              </li>
+              <li class="headnav-items">
+                <a href="./portfolio.html" class="headnav-item">Портфолио</a>
+              </li>
+              <li class="headnav-items"><a href="" class="headnav-item">Контакты</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="mail-tel">
+          <ul class="nav-contacts">
             <li>
-              <a href="./index.html" class="headnav-list">Студия</a>
+              <a href="mailto:info@devstudio.com" class="nav-contacts">info@devstudio.com</a>
             </li>
             <li>
-              <a href="./portfolio.html" class="headnav-list">Портфолио</a>
+              <a href="tel:+380961111111" class="nav-contacts tel-header">+38 096 111 11 11</a>
             </li>
-            <li><a href="" class="headnav-list">Контакты</a></li>
           </ul>
-        </nav>
-        <ul class="nav-contacts">
-          <li>
-            <a href="mailto:info@devstudio.com" class="nav-contacts">info@devstudio.com</a>
-          </li>
-          <li>
-            <a href="tel:+380961111111" class="nav-contacts">+38 096 111 11 11</a>
-          </li>
-        </ul>
+        </div>
       </div>
     </header>
 
@@ -62,106 +73,106 @@
 
           <h2 class="projects-title">Проэкты</h2>
           <ul class="projects-list">
-            <li class="project-tehno">
-              <img class="project-tehno-img" src="./images/img-ptf-1.jpg" alt="" width="370" />
-              <h3 class="project-tehno-title">Технокряк</h3>
-              <p class="project-tehno-text">Веб-сайт</p>
+            <li class="project">
+              <img class="project-img" src="./images/img-ptf-1.jpg" alt="" width="370" />
+              <h3 class="project-title">Технокряк</h3>
+              <p class="project-text">Веб-сайт</p>
             </li>
-            <li class="project-poster">
+            <li class="project">
               <img
-                class="project-poster-img"
+                class="project-img"
                 src="./images/img-ptf-2.jpg"
                 alt=""
                 width="370"
                 src=""
                 alt=""
               />
-              <h3 class="project-poster-title">Постер New Orlean vs Golden Star</h3>
-              <p class="project-poster-text">Дизайн</p>
+              <h3 class="project-title">Постер New Orlean vs Golden Star</h3>
+              <p class="project-text">Дизайн</p>
             </li>
-            <li class="project-food">
+            <li class="project">
               <img
-                class="project-food-img"
+                class="project-img"
                 src="./images/img-ptf-3.jpg"
                 alt=""
                 width="370"
                 src=""
                 alt=""
               />
-              <h3 class="project-food-title">Ресторан Seafood</h3>
-              <p class="project-food-text">Приложение</p>
+              <h3 class="project-title">Ресторан Seafood</h3>
+              <p class="project-text">Приложение</p>
             </li>
-            <li class="project-prime">
+            <li class="project">
               <img
-                class="project-prime-img"
+                class="project-img"
                 src="./images/img-ptf-4.jpg"
                 alt=""
                 width="370"
                 src=""
                 alt=""
               />
-              <h3 class="project-prime-title">Проект Prime</h3>
-              <p class="project-prime-text">Маркетинг</p>
+              <h3 class="project-title">Проект Prime</h3>
+              <p class="project-text">Маркетинг</p>
             </li>
-            <li class="project-boxes">
+            <li class="project">
               <img
-                class="project-boxes-img"
+                class="project-img"
                 src="./images/img-ptf-5.jpg"
                 alt=""
                 width="370"
                 src=""
                 alt=""
               />
-              <h3 class="project-boxes-title">Проект Boxes</h3>
-              <p class="project-boxes-text">Приложение</p>
+              <h3 class="project-title">Проект Boxes</h3>
+              <p class="project-text">Приложение</p>
             </li>
-            <li class="project-inspiration">
+            <li class="project">
               <img
-                class="project-inspiration-img"
+                class="project-img"
                 src="./images/img-ptf-6.jpg"
                 alt=""
                 width="370"
                 src=""
                 alt=""
               />
-              <h3 class="project-inspiration-title">Inspiration has no Borders</h3>
-              <p class="project-inspiration-text">Веб-сайт</p>
+              <h3 class="project-title">Inspiration has no Borders</h3>
+              <p class="project-text">Веб-сайт</p>
             </li>
-            <li class="project-edition">
+            <li class="project">
               <img
-                class="project-edition-img"
+                class="project-img"
                 src="./images/img-ptf-7.jpg"
                 alt=""
                 width="370"
                 src=""
                 alt=""
               />
-              <h3 class="project-edition-title">Издание Limited Edition</h3>
-              <p class="project-edition-text">Дизайн</p>
+              <h3 class="project-title">Издание Limited Edition</h3>
+              <p class="project-text">Дизайн</p>
             </li>
-            <li class="project-lab">
+            <li class="project">
               <img
-                class="project-lab-img"
+                class="project-img"
                 src="./images/img-ptf-8.jpg"
                 alt=""
                 width="370"
                 src=""
                 alt=""
               />
-              <h3 class="project-lab-title">Проект LAB</h3>
-              <p class="project-lab-text">Маркетинг</p>
+              <h3 class="project-title">Проект LAB</h3>
+              <p class="project-text">Маркетинг</p>
             </li>
-            <li class="project-gb">
+            <li class="project">
               <img
-                class="project-gb-img"
+                class="project-img"
                 src="./images/img-ptf-9.jpg"
                 alt=""
                 width="370"
                 src=""
                 alt=""
               />
-              <h3 class="project-gb-title">Growing Business</h3>
-              <p class="project-gb-text">Приложение</p>
+              <h3 class="project-title">Growing Business</h3>
+              <p class="project-text">Приложение</p>
             </li>
           </ul>
         </div>

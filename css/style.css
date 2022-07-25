@@ -28,15 +28,31 @@ body {
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding: 94px 15px 0px;
+}
+
+.header-conteiner {
+  display: flex;
+  align-items: center;
 }
 
 .header-nav {
 }
 
+.header > .conteiner {
+  display: flex;
+  align-items: center;
+}
+
 .logo {
   text-decoration: none;
+  margin-right: 93px;
+}
+
+.logo:focus,
+.logo:hover {
+  text-decoration: underline;
+  color: #2196f3;
 }
 
 .logo-studio {
@@ -49,17 +65,26 @@ body {
 }
 
 .headnav-list {
+  display: flex;
+  list-style: none;
+}
+
+.headnav-item {
   font-weight: 500;
   font-size: 14px;
-  line-height: 16px;
+  line-height: calc(16 / 14);
   letter-spacing: 0.02em;
   color: #212121;
   list-style: none;
   text-decoration: none;
 }
 
-.headnav-list:hover,
-.headnav-list:focus {
+.headnav-items:not(:last-child) {
+  margin-right: 50px;
+}
+
+.headnav-item:hover,
+.headnav-item:focus {
   color: #2196f3;
 }
 
@@ -74,11 +99,20 @@ body {
   color: #757575;
   list-style-type: none;
   text-decoration: none;
+  display: flex;
 }
 
 .nav-contacts:hover,
 .nav-contacts:focus {
   color: #2196f3;
+}
+
+.mail-tel {
+  margin-left: auto;
+}
+
+.tel-header {
+  margin-left: 50px;
 }
 
 .unique {
@@ -96,6 +130,13 @@ body {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #ffffff;
+  width: 696px;
+  margin-left: 252px;
+}
+
+.hero-content {
+  padding-top: 200px;
+  padding-bottom: 280px;
 }
 
 .button-hero {
@@ -111,6 +152,9 @@ body {
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   background: #2196f3;
   cursor: pointer;
+  padding: 10px 32px;
+  display: block;
+  margin: 30px auto 0px;
 }
 
 .button-hero:hover,
@@ -136,14 +180,22 @@ body {
 
 .plus {
   text-decoration: none;
+  padding: 94px 15px 0px;
 }
 
 .plus-title {
   visibility: hidden;
 }
 
+.plus-items {
+  display: flex;
+}
+
 .plus-list {
   list-style-type: none;
+  max-width: 270px;
+  gap: 30px;
+  flex-grow: 1;
 }
 
 .plus-text-title {
@@ -153,6 +205,7 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #212121;
+  margin-bottom: 10px;
 }
 
 .plus-text {
@@ -176,16 +229,21 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
+  margin-bottom: 50px;
 }
 
 .about-list {
   list-style-type: none;
+  display: flex;
+  gap: 30px;
+  flex-grow: 30;
 }
 
 .about-foto {
 }
 
-.team {
+.team > .conteiner {
+  padding-bottom: 94px;
 }
 
 .team-title {
@@ -194,13 +252,18 @@ body {
   line-height: calc(42 / 36);
   text-align: center;
   letter-spacing: 0.03em;
+  margin-bottom: 50px;
 }
 
 .team-list {
   list-style-type: none;
+  display: flex;
+
+  align-items: center;
 }
 
-.specialist {
+.specialist:not(:last-child) {
+  margin-right: 30px;
 }
 
 .specialist-foto {
@@ -212,6 +275,8 @@ body {
   line-height: calc(19 / 16);
   text-align: center;
   letter-spacing: 0.03em;
+  margin-top: 30px;
+  margin-bottom: 10px;
 }
 
 .specialist-job {
@@ -226,9 +291,11 @@ body {
 
 .footer {
   background-color: #2f303a;
+  padding-bottom: 60px;
 }
 
-.conteiner {
+.footer > .conteiner {
+  padding-top: 60px;
 }
 
 .logo {
@@ -250,7 +317,6 @@ body {
   font-size: 26px;
   line-height: calc(31 / 26);
   letter-spacing: 0.03em;
-
   color: #ffffff;
 }
 
@@ -260,10 +326,18 @@ body {
   line-height: calc(31 / 26);
   letter-spacing: 0.03em;
   color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.logo-footer:hover,
+.logo-footer:focus {
+  color: #2196f3;
+  text-decoration: underline;
 }
 
 .address {
   font-style: normal;
+  margin-bottom: 9px;
 }
 
 .footer-list {
@@ -299,6 +373,10 @@ body {
   color: #2196f3;
 }
 
+.filter-title {
+  visibility: hidden;
+}
+
 .filter-item {
   font-weight: 500;
   font-size: 16px;
@@ -307,16 +385,21 @@ body {
   letter-spacing: 0.03em;
   color: #212121;
   cursor: pointer;
+  margin-right: 8px;
+  padding: 6px 22px;
 }
 
 .filter-item:hover,
 .filter-item:focus {
   color: #ffffff;
-  background: #2196f3;
+  background-color: #2196f3;
 }
 
 .filter-list {
   list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .projects-title {
@@ -325,20 +408,42 @@ body {
 
 .projects-list {
   list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 50px;
 }
 
-.project-tehno-title {
+.project {
+  width: 370px;
+}
+
+.project:nth-child(2),
+.project:nth-child(5),
+.project:nth-child(8) {
+  margin-right: 30px;
+  margin-left: 30px;
+}
+
+.project-title {
   font-weight: 700;
   font-size: 18px;
   line-height: calc(36 / 18);
   letter-spacing: 0.06em;
+  margin-top: 20px;
+  margin-bottom: 4px;
+  margin-left: 24px;
 }
 
-.project-tehno-text {
+.project-text {
   font-weight: 400;
   font-size: 16px;
   line-height: calc(30 / 16);
   letter-spacing: 0.03em;
-
+  margin-bottom: 20px;
+  margin-left: 24px;
   color: #757575;
+}
+
+.portfolio {
+  padding-bottom: 60px;
 }
