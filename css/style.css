@@ -293,7 +293,7 @@ body {
   line-height: calc(19 / 16);
   text-align: center;
   letter-spacing: 0.03em;
-
+  margin-bottom: 30px;
   color: #757575;
 }
 
